@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+}
+
+header{
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+section{
+    background-color: rgba(200, 200, 200, 0.5);
+}
+.menu-nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.menu-nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 20px;
+}
+.menu-nav ul li{
+    list-style: none;
+}
+.menu-nav ul li a{
+    color: #000;
+}
+.menu-nav2{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+}
+.menu-nav2 ul{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 20px;
+}
+.menu-nav2 ul li{
+    list-style: none;
+}
+.menu-nav2 ul li a{
+    color: #000;
+}
+#b_box{
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(100, 100, 100, 0.5);
+    height: 60%;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+h1{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+    text-shadow: 5px 5px 5px #ffffffd0, -5px -5px 5px #ffffffd0,
+    -5px 5px 5px #ffffffd0,  5px -5px 5px #ffffffd0,
+     5px 0px 5px #ffffffd0, -5px -0px 5px #ffffffd0,
+     0px 5px 5px #ffffffd0,  0px -5px 5px #ffffffd0;
+}
+#ABOUT{
+    height: 100vh;
+}
+#ABOUT h2{
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    padding-top: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+.profile p {
+    position: absolute;
+    font-size: 1.5rem;
+    margin-top: 250px;
+    width: 74%;
+    z-index: 0;
+    text-align: right;
+
+}
+
+#ABOUT ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    top: 180%;
+    width: 100%;
+  }
+#ABOUT ul li a {
+    display: inline-block;
+    border-radius: 8px;
+    transition: all 0.3s;
+  }
+#ABOUT ul li a svg {
+    fill: var(--light-100) !important;
+  }
+#ABOUT ul li.insta a:hover, 
+#ABOUT ul li.insta a:active {
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  }
+#ABOUT ul li.fb a:hover,
+#ABOUT ul li.fb a:active {
+    background: #3b5998;
+  }
+#ABOUT a img{
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    height: 75px;
+    z-index: 9999; /*重なりを調整*/
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+  }
+#WORKS{
+    height: 100vh;
+}
+#WORKS h2{
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    padding-top: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+#SKILLS{
+    height: 100vh;
+}
+#SKILLS h2{
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    padding-top: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+.copyright{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: small;
+    z-index: 1;
+}
+#b_box1{
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(100, 100, 100, 0.5);
+    height: 82%;
+    width: 76%;
+    left: 12%;
+    margin-top: 4.2rem;
+}
+
+@media (min-width: 481px){
+    body{
+        font-size: 2.5rem;
+    }
+    #ABOUT h2{
+        font-size: 3rem;
+    }
+    #WORKS h2{
+        font-size: 3rem;
+    }
+    #SKILLS h2{
+        font-size: 3rem;
+    }
+    .copyright{
+        bottom: -2280px;
+    }
+    #ABOUT ul li a svg{
+        width: 75px;
+        height: 45px;
+    }
+    #ABOUT .profile h2{
+        margin-top: 150px;
+        width: 73%;
+        position: absolute;
+        z-index: 0;
+        font-size: 2rem;
+        text-align: right;
+    }
+    .ikon{
+        border: double 7px rgba(100, 100, 100, 0.5);
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+        left: 20%;
+        margin-top: 200px;
+    }
+    .ikon img{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 13px;
+    }
+}
+@media (max-width: 480px){
+    body{
+        font-size: 2rem;
+    }
+    #ABOUT h2{
+        font-size: 2.5rem;
+    }
+    #WORKS h2{
+        font-size: 2.5rem;
+    }
+    #SKILLS h2{
+        font-size: 2.5rem;
+    }
+    .copyright{
+        bottom: -2030px;
+    }
+    h1{
+        font-size: 50px;
+        top: 50%;
+    }
+    #ABOUT ul li a svg{
+        width: 60px;
+        height: 35px;
+    }
+    #ABOUT .profile h2{
+        margin-top: 290px;
+        position: absolute;
+        z-index: 0;
+        font-size: 1.5rem;
+    }
+    .ikon{
+        border: double 7px rgba(100, 100, 100, 0.5);
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        left: 27.7%;
+        margin-top: 100px;
+    }
+    .ikon img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 13px;
+    }
+}
