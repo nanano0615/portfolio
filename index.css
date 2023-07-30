@@ -83,7 +83,11 @@ h1{
     text-align: center;
     width: 100%;
 }
-.profile p {
+.profile{
+    display: flex;
+    position: absolute;
+}
+.profile text {
     position: absolute;
     z-index: 0;
 }
@@ -145,6 +149,35 @@ h1{
     text-align: center;
     width: 100%;
 }
+#SKILLS .skill-1{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    gap: 0px;
+}
+#SKILLS .skill-1 img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+#SKILLS .skill-2{
+    display: flex;
+    position: absolute;
+    width: 200px;
+}
+#SKILLS .skill-2 img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+#SKILLS .skill-3{
+    position: absolute;
+}
+#SKILLS .skill-3 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 .copyright{
     position: absolute;
     text-align: center;
@@ -189,7 +222,7 @@ h1{
         z-index: 0;
         font-size: 2rem;
     }
-    .profile p {
+    .profile text{
         margin-top: 350px;
         text-align: center;
         font-size: 2rem;
@@ -246,7 +279,7 @@ h1{
         z-index: 0;
         font-size: 1.5rem;
     }
-    .profile p {
+    .profile text {
           margin-top: 400px;
           text-align: center;
           width: 100%;

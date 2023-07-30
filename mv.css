@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(200, 200, 200, 0.5);
+}
+header .header a{
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+#b_box1{
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 80%;
+    margin-left: 10%;
+    
+}
+#works{
+    height: 120vh;
+    padding-top: 80px;
+}
+#works .work h1{
+    margin-top: 50px;
+    font-size: 2rem;
+}
+#works h2{
+    margin-top: -40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+}
+video{
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.text{
+    text-align: center;
+}
+.text h3{
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+.text p{
+    font-size: 1.3rem;
+    padding-bottom: 50px;
+}
+  *::before, *::after {
+    box-sizing: inherit;
+  }
